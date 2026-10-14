@@ -1,0 +1,33 @@
+{
+  "_comment": "Simulation configuration settings for 2D Grid Autonomous Navigation. All values correspond to simulated space.",
+  "window": {
+    "width": 800,
+    "height": 600,
+    "title": "AI Autonomous Navigation Simulation",
+    "unit": "pixels"
+  },
+  "grid": {
+    "cell_size": 20,
+    "width_cells": 40,
+    "height_cells": 30,
+    "unit": "pixels_per_cell"
+  },
+  "simulation": {
+    "fps": 60,
+    "time_step": 0.0166,
+    "unit": "frames_per_second_and_seconds_per_tick"
+  },
+  "robot": {
+    "radius": 8.0,
+    "max_speed": 4.0,
+    "sensor_range": 60.0,
+    "unit": "pixels_and_pixels_per_step"
+  },
+  "planner": {
+    "algorithm": "astar",
+    "supported_algorithms": ["astar", "dijkstra"],
+    "allow_diagonal": false,
+    "heuristic": "manhattan",
+    "unit": "grid_coordinates"
+  }
+}
